@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
+
+/* SELECTORES BASICOS */
+header, section, article, nav, footer, aside, figure, form{
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+body{
+    margin: 0;
+    background: #ffffff;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Agregamos esta propiedad para que los elementos se comporten mejor dentro de su contenedor */
+}
+
+#cajacabercera{
+    width: 100%;
+    background: linear-gradient(90deg, #000D39 -8.75%, #07B2D8 100%), #13345A;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 999;
+}
+p, h1, h2,h3, h4{
+    font-family: 'Poppins', sans-serif;
+    margin: 6px;
+}
+h1{font-size: 24px;}
+h3{font-size: 18px;}
+h4{font-size: 16px;}
+p{font-size: 15px;}
+
+a{
+    text-decoration: none;
+}
+a img{
+    border: none,
+}
+
+h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 70px;
+    font-weight: bolder;
+    text-align: center;
+    background-image: linear-gradient(90deg, #01204B 40%, #04638C 50%, #07A8CE 60%);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    color: transparent;
+
+}
+#cabecera{
+    width: 100%;
+    max-width: 1100px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+  
+}
+#logo{
+   padding: 5px;
+   margin-left: 2%;
+}
+#logo img{
+   width: 237px;
+   height: auto;
+}
+/* -------------------MENU------------------------ */
+
+.menu{
+    display: flex;
+    height: 100px;
+    width: 100%;
+    position: fixed;
+    justify-content: center;
+    
+}
+#btn-menu{
+    display: none;
+}
+#mmovil{
+    font-size: 45px;
+    cursor: pointer;
+    text-align: right;
+    color: #ffffff;
+    display: none;
+    
+}
+.menu ul{
+    display: flex;
+    flex-wrap: row;
+    padding: 10px 5px;
+    list-style: none;
+    align-items: baseline;
+}
+.menu li {
+    list-style-type: none;
+    margin-left: 80px;
+    
+    
+  }
+.menu a{
+  display: block;
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 50px;
+  margin-right: 30px;
+  font-weight: 500;
+}
+.menu a i{
+    font-size: 35px;
+    padding: 20px;
+    align-items: baseline;
+}
+
+.menu a:hover{
+    color: #b5b4ff;
+    text-decoration: underline;
+}
+.banner{
+    margin-top: 80px;
+    background-image: url("img/fondo-personas.jpg");
+    width: 100%;
+    object-fit: cover;
+    height: 1004px;
+    display: flex;
+    justify-content: center;
+    color: white;
+    align-items: center;
+    background-size: cover;
+    padding-top: 100px;
+}
+
+.inicio{
+
+    background-color: #E9E9E9;
+    height: 920px;
+    position: relative;
+    padding-top: 100px;
+}
+.calendario{
+    background: #fff url("img/fondo-ciudad.png") no-repeat bottom;
+    height: 920px;
+    position: relative;
+    padding-top: 100px;
+}
+.articulos{
+    background-color: #E9E9E9;
+    height: 920px;
+    position: relative;
+    padding-top: 100px;
+}
+.mas{
+    background: #fff url("img/fondo-ciudad.png") no-repeat bottom;
+    height: 920px;
+    position: relative;
+    padding-top: 100px;
+}
+
+.tren{
+    width: 100%;
+    height: auto;
+    display: block;
+    max-width: 929px;
+    position:absolute;
+    right: 0%;
+    bottom: 0%;
+}
+
+
+/* ---------------------------------------------------
+---------------PIE DE PAGINA-----------------------
+--------------------------------------------------- */
+#piepagina{
+    background: #07B2D8;
+    padding: 2% 0;
+}
+.cajapie{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    max-width: 1100px;
+    justify-items: baseline;
+
+}
+#piepagina p{
+    font-size: 50px;
+    font-weight: 600;
+    color: #ffffff;
+    margin-left: 40px;
+    
+}
+#piepagina ul{
+    width: 160px;
+    margin: 0 auto;
+    padding: 0;
+    display: flex;
+    list-style: none;
+    margin-left: 5%;
+    position: absolute;
+    right: 30%;
+
+}
+#piepagina ul li{
+    padding: 10px 30px;
+}
+#piepagina ul li a{
+    width: 40px;
+    height: 40px;
+    display: block;
+    line-height: 40px;
+    color: #000000;
+    font-size: 50px;
+}
